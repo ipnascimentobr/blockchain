@@ -1,26 +1,32 @@
 # Gerador de Carteira Bitcoin
 
-Este projeto é um gerador de carteira Bitcoin que utiliza as bibliotecas bip32, bip39 e bitcoinjs-lib para criar uma carteira HD (Hierarchical Deterministic Wallet) e exibir o endereço da carteira, a chave privada e a seed mnemônica.
+Este projeto é um gerador de carteira Bitcoin que utiliza as bibliotecas `bip32`, `bip39` e `bitcoinjs-lib` para criar uma carteira HD (Hierarchical Deterministic Wallet) e exibir o endereço da carteira, a chave privada e a seed mnemônica.
 
-## Carteira TestNet
+## Carteira Testnet
 
-As carteiras Testnet operam em uma rede separada da blockchain do Bitcoin e são usadas somente para fins de teste. As carteiras Testnet permitem que desenvolvedores ou testadores experimentem sem ter que arriscar bitcoins reais.
+As carteiras Testnet operam em uma rede separada da blockchain do Bitcoin e são usadas apenas para fins de teste. As carteiras Testnet permitem que desenvolvedores ou testadores experimentem sem ter que arriscar bitcoins reais.
 
-Os fundos em uma carteira Testnet não têm nenhum valor real , e o bitcoin testnet nessas carteiras não pode ser "ativado" ou "convertido" em bitcoin mainnet. Se você tentar enviar bitcoin testnet para uma carteira bitcoin, receberá o erro " endereço inválido ".
+Os fundos em uma carteira Testnet não têm nenhum valor real, e o bitcoin Testnet nessas carteiras não pode ser "ativado" ou "convertido" em bitcoin da mainnet. Se você tentar enviar bitcoin Testnet para uma carteira bitcoin, receberá o erro "endereço inválido".
 
-Mesmo em redes Testnet você poderá também receber mensagem de endereço invalido, caso isso ocorra observer o prefixo da sua carteira.
+### Verificação de Endereço em Redes Testnet
+
+Mesmo utilizando redes Testnet, é possível receber uma mensagem de "endereço inválido". Se isso acontecer, verifique cuidadosamente o prefixo do endereço da sua carteira.
 
 
-## Devolução dos Faucet
+## Devolução dos Faucets
 
-Fique atento que as Faucet, são moedas para testes faça todos os procedimentos dos cursos, mas não esqueça de realizar a devolução dos faucet para a origem para que outros programadore posso também usufuir dos mesmo recursos que você está usando no momento. Caso não realize isso a origem pode não ter mais faucet para ajudar você no futuro.
+### Devolução dos Faucets
+
+As Faucets fornecem moedas para testes. Após utilizar os recursos em seus projetos de desenvolvimento, é fundamental devolver os Faucets à sua origem. Isso garante que outros programadores também possam beneficiar-se dos mesmos recursos que você utilizou. Se não realizar essa devolução, a origem pode ficar sem moedas disponíveis para auxiliar você e outros usuários no futuro.
 
 
 ## Instalação
 
 Para utilizar este gerador de carteira, você precisa ter o Node.js instalado. Em seguida, execute o seguinte comando para instalar as dependências:
 
-
+```bash
+npm install bip32 bip39 bitcoinjs-lib
+```
 
 ## Por que estou recebendo um erro de "endereço inválido"?
 
